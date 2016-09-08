@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+@property (atomic, assign) NSInteger networkIndicatorCount;
+
 @end
 
 @implementation AppDelegate
@@ -40,6 +42,32 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Network Indicator
+
+- (void)increaseNetworkIndicatorCount {
+    
+    @synchronized (self) {
+        self.networkIndicatorCount += 1;
+    }
+    
+    if (self.networkIndicatorCount) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
+}
+
+- (void)decreaseNetworkIndicatorCount {
+    
+    @synchronized (self) {
+        if (self.networkIndicatorCount > 0) {
+            self.networkIndicatorCount -= 1;
+        }
+    }
+    
+    if (!self.networkIndicatorCount) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    }
 }
 
 @end

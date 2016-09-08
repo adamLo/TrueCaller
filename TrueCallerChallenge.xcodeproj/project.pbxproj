@@ -13,6 +13,10 @@
 		19C58DE81D33BCEC00C89BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C58DE61D33BCEC00C89BFA /* Main.storyboard */; };
 		19C58DEA1D33BCEC00C89BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C58DE91D33BCEC00C89BFA /* Assets.xcassets */; };
 		19C58DED1D33BCEC00C89BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C58DEB1D33BCEC00C89BFA /* LaunchScreen.storyboard */; };
+		19C58DF71D33C77300C89BFA /* ALWebOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C58DF61D33C77300C89BFA /* ALWebOperation.m */; };
+		19C58DFA1D33CF3000C89BFA /* ALFindCharacterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C58DF91D33CF3000C89BFA /* ALFindCharacterOperation.m */; };
+		19C58DFD1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C58DFC1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.m */; };
+		19C58E001D33D4F200C89BFA /* ALWordCountOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C58DFF1D33D4F200C89BFA /* ALWordCountOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		19C58DE91D33BCEC00C89BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19C58DEC1D33BCEC00C89BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19C58DEE1D33BCEC00C89BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C58DF51D33C77300C89BFA /* ALWebOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALWebOperation.h; path = Task/ALWebOperation.h; sourceTree = "<group>"; };
+		19C58DF61D33C77300C89BFA /* ALWebOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALWebOperation.m; path = Task/ALWebOperation.m; sourceTree = "<group>"; };
+		19C58DF81D33CF3000C89BFA /* ALFindCharacterOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALFindCharacterOperation.h; path = Task/ALFindCharacterOperation.h; sourceTree = "<group>"; };
+		19C58DF91D33CF3000C89BFA /* ALFindCharacterOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALFindCharacterOperation.m; path = Task/ALFindCharacterOperation.m; sourceTree = "<group>"; };
+		19C58DFB1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALFindRepeatingCharacterOperation.h; path = Task/ALFindRepeatingCharacterOperation.h; sourceTree = "<group>"; };
+		19C58DFC1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALFindRepeatingCharacterOperation.m; path = Task/ALFindRepeatingCharacterOperation.m; sourceTree = "<group>"; };
+		19C58DFE1D33D4F200C89BFA /* ALWordCountOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALWordCountOperation.h; path = Task/ALWordCountOperation.h; sourceTree = "<group>"; };
+		19C58DFF1D33D4F200C89BFA /* ALWordCountOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALWordCountOperation.m; path = Task/ALWordCountOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		19C58DDC1D33BCEC00C89BFA /* TrueCallerChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				19C58DF41D33C6B200C89BFA /* Tasks */,
 				19C58DE01D33BCEC00C89BFA /* AppDelegate.h */,
 				19C58DE11D33BCEC00C89BFA /* AppDelegate.m */,
 				19C58DE31D33BCEC00C89BFA /* ViewController.h */,
@@ -77,6 +90,21 @@
 				19C58DDE1D33BCEC00C89BFA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19C58DF41D33C6B200C89BFA /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				19C58DF51D33C77300C89BFA /* ALWebOperation.h */,
+				19C58DF61D33C77300C89BFA /* ALWebOperation.m */,
+				19C58DF81D33CF3000C89BFA /* ALFindCharacterOperation.h */,
+				19C58DF91D33CF3000C89BFA /* ALFindCharacterOperation.m */,
+				19C58DFB1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.h */,
+				19C58DFC1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.m */,
+				19C58DFE1D33D4F200C89BFA /* ALWordCountOperation.h */,
+				19C58DFF1D33D4F200C89BFA /* ALWordCountOperation.m */,
+			);
+			name = Tasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +133,7 @@
 		19C58DD21D33BCEC00C89BFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AL;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Adam Lovastyik";
 				TargetAttributes = {
@@ -150,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C58DE51D33BCEC00C89BFA /* ViewController.m in Sources */,
+				19C58DFA1D33CF3000C89BFA /* ALFindCharacterOperation.m in Sources */,
 				19C58DE21D33BCEC00C89BFA /* AppDelegate.m in Sources */,
 				19C58DDF1D33BCEC00C89BFA /* main.m in Sources */,
+				19C58E001D33D4F200C89BFA /* ALWordCountOperation.m in Sources */,
+				19C58DF71D33C77300C89BFA /* ALWebOperation.m in Sources */,
+				19C58DFD1D33D2F700C89BFA /* ALFindRepeatingCharacterOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -253,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

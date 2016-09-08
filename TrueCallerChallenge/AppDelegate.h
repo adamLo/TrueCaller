@@ -12,6 +12,15 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/**
+ *  Displays network indicator
+ */
+- (void)increaseNetworkIndicatorCount;
+
+/**
+ *  Hides network indicator when not needed anymore
+ */
+- (void)decreaseNetworkIndicatorCount;
 
 @end
 
